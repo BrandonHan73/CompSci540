@@ -2,6 +2,9 @@
 main: compile/main.out
 	./compile/main.out
 
+init:
+	mkdir compile
+
 compile/main.out: compile/main.o compile/part_1.o compile/part_2.o
 	g++ compile/main.o compile/part_1.o compile/part_2.o -g -o compile/main.out
 
